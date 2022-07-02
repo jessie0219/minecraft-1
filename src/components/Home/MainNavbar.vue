@@ -17,7 +17,7 @@
         </button>
         <!-- TODO 有時間來新增hover出現icon的功能  20220622 -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto text-center">
             <li class="mx-4 nav-item">
               <router-link class="nav-link link-light" to="/">
                 首頁</router-link
@@ -25,8 +25,7 @@
             </li>
             <li class="mx-4 nav-item">
               <router-link class="nav-link link-light" to="/about"
-                >關於</router-link
-              >
+                >關於</router-link>
             </li>
             <li class="mx-4 nav-item">
               <router-link class="nav-link link-light" to="/products"
@@ -50,20 +49,14 @@ export default {
   mounted() {
     var nav = document.querySelector("nav");
     window.addEventListener("scroll", function () {
-      if (this.window.pageYOffset > 100) {
-        nav.classList.add("bg-dark", "shadow");
+      if (this.window.pageYOffset > 50) {
+        nav.classList.add("navbarbg");
       } else {
-        nav.classList.remove("bg-dark", "shadow");
+        nav.classList.remove("navbarbg");
       }
     });
 
-    const userData = localStorage.getItem("user-info");
-    console.log(userData);
-    if (userData !== null) {
-      this.isLogin = true;
-    } else {
-      this.isLogin = false;
-    }
+    
   },
 };
 </script>
@@ -82,5 +75,22 @@ li {
 li:hover {
   /* background-color: black; */
   border-bottom: yellow solid;
+}
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+.navbarbg{
+    transition: .5s;
+    background: black;
+
+}
+
+@media handheld,screen and (max-width: 986px){
+  nav {
+    background: black;
+  }
 }
 </style>

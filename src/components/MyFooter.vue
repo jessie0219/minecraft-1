@@ -4,10 +4,10 @@
       <div class="col-10 col-md-4 col-lg-4 p-3">
         <span class="mb-3 fs-2">比賽場次</span>
         <ul>
-          <li class="fs-5">北護場 05/28 舉辦</li>
-          <li class="fs-5">文大場 05/29 舉辦</li>
-          <li class="fs-5">明道場 07/02 舉辦</li>
-          <li class="fs-5">真理場 09/~ 舉辦</li>
+          <li class="fs-5">北護場 08/27 舉辦</li>
+          <li class="fs-5">文大場 09/04 舉辦</li>
+          <li class="fs-5">明道場 00/00 舉辦</li>
+          <li class="fs-5">真理場 00/00 舉辦</li>
         </ul>
       </div>
       <div class="col-10 col-md-4 col-lg-4 p-3">

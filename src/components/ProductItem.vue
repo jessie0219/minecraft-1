@@ -12,13 +12,7 @@
         </div>
         <div class="card-body">
           <p class="card-text fs-5">苦力帕T恤</p>
-          <!-- <p class="card-text">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-          </p> -->
+
           <p class="card-text fs-5">$999</p>
           <!-- Button trigger modal -->
         </div>

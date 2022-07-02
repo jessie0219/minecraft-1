@@ -92,7 +92,4 @@ export default {
   object-fit: scale-down;
 }
 
-.bi-star-fill {
-  color: rgb(255, 208, 0);
-}
 </style>

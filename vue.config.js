@@ -8,3 +8,10 @@ module.exports = {
     ? '/minecraft-1/'
     : '/'
 }
+
+/*
+module.exports = {
+  publicPath: ''
+}
+
+*/

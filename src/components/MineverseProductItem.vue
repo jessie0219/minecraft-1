@@ -1,20 +1,66 @@
 <template>
   <div class="col-12 col-md-4">
+  <button
+      type="button"
+      class="btn"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
     <div class="card">
         <div class="item-img">
           <img :src="images" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
           <p class="card-text fs-5">Item Name</p>
-          <p class="card-text">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-          </p>
+        
           <p class="card-text fs-5">$999</p>
         </div>
+    </div>
+    </button>
+  </div>
+    <!-- Modal -->
+  <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">商品資訊</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body d-flex">
+          <div class="container">
+            <div class="text-center mt-2">
+              <img src="@/assets/Frog_1.png" alt="" />
+            </div>
+            <div class="text-center">
+              <p class="mt-2 text-center">Item Name</p>
+            </div>
+            <div class="text-center">
+              <p>價錢: $999</p>
+            </div>
+            <!-- <div class="text-center">
+              <input type="number" name="" id="" />
+            </div> -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+            去蝦皮看看
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
